@@ -1,3 +1,10 @@
+@media screen and (max-width:1200px){
+     /*============ RESPONSIVE PRODUCT_DETAIL.HTML ============*/
+     .pd-box.List-info-desc ul li{
+         font-size: 12px;
+         margin-right: 11px;
+     }
+}
 @media screen and (max-width:990px) {
     /*============ RESPONSIVE INDEXCLEAN.HTML ============*/
     
@@ -53,6 +60,24 @@
     .blockContent .blockColumn-right {
         display: none;
     }
+
+     /*============ RESPONSIVE PRODUCT_DETAIL.HTML ============*/
+
+     .pdBlockDetail .pd-images, .pdBlockDetail .pd-info{
+         max-width: 100%;
+         flex: none;
+     }
+
+
+
+
+
+
+
+
+
+
+
     /*============ RESPONSIVE FOOTER ============*/
     .footerTop .colFooter {
         max-width: 100%;
@@ -173,7 +198,14 @@
     }
 
 
+     /*============ RESPONSIVE PRODUCT_DETAIL.HTML ============*/
 
+    .pd-box.pd-price-box-info .pd-wrap-price, .pd-box.pd-price-box-info .pd-wrap-policy{
+        max-width: 100%;
+        flex: none;
+    }
+
+    
 
     .footerTop .colFooter.right .fTLinks{
         margin-bottom: 20px;

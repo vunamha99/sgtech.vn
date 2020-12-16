@@ -17,18 +17,21 @@ let imgBox = imgFeatured.getElementsByTagName('img');
     }
 
 
+let screen = window.matchMedia("(max-width:768px)");
+
+    function matchscreen(x){
+        if(x.matches){
+            document.getElementsByClassName('btn-tab')[2].style.display = 'none'; 
+        }else{
+            document.getElementsByClassName('btn-tab')[2].style.display = 'block';
+        }
+    }
+    matchscreen(screen);
+    screen.addListener(matchscreen);
 
 
 
-
-
-
-
-
-
-
-
-
+    
 
 
 
