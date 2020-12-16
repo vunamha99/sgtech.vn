@@ -205,7 +205,9 @@
         flex: none;
     }
 
-    
+    .overlay-image .wrap-overlay{
+        width: 460px;
+    }
 
     .footerTop .colFooter.right .fTLinks{
         margin-bottom: 20px;

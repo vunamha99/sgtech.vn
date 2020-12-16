@@ -88,6 +88,52 @@ img{
     width: calc(100% - 90px);
     margin-left: 10px;
 }
+.wrap-pd-images .featured-img>a:hover{
+    cursor: zoom-in;
+}
+
+
+/* STYLE overlay-image */
+
+.overlay-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 30;
+    display: none;
+    animation: fadeEffect .5s;
+}
+
+.overlay-image .wrap-overlay{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: auto%;
+    background: #F9F9F9;
+    padding: 15px;
+    border-radius: 5px;
+}
+.wrap-overlay>.image-zoom{
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+.wrap-overlay>.image-zoom>a{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top:-15px;
+    right: -15px;
+    background-image: url(../images/product/fancybox_sprite.webp);
+}
+
+
+
 
 
 /* STYLE pd-info */

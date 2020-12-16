@@ -16,6 +16,46 @@ let imgBox = imgFeatured.getElementsByTagName('img');
         }  
     }
 
+let imagezoom = document.getElementById('image');
+let closeoverlay = document.getElementsByClassName('close-overlay');
+    imgBox[0].onclick = function(e){
+        document.getElementsByClassName('overlay-image')[0].style.display = 'block';
+        imagezoom.src = imgBox[0].src;
+    }
+
+    closeoverlay[0].onclick = function(e){
+        document.getElementsByClassName('overlay-image')[0].style.display = 'none';
+    }
+
+    window.onclick = function(e){
+        if(e.target == document.getElementsByClassName('overlay-image')[0]){
+            document.getElementsByClassName('overlay-image')[0].style.display = 'none';
+        }
+    }
+
+
+
+
+    let increase = document.getElementsByClassName('increase')[0];
+    let decrease = document.getElementsByClassName('decrease')[0];
+    let input = document.getElementById('quantity');
+
+    increase.onclick = function(){
+        if(input.value >= 12){
+            input.value = 12;
+        }else{
+            input.value = Number(input.value) + 1;
+        }
+    }
+    decrease.onclick = function(){
+        if(input.value <= 0){
+            input.value = 0;
+        }else{
+            input.value = Number(input.value) - 1;
+        }
+    }
+
+
 
 let screen = window.matchMedia("(max-width:768px)");
 
@@ -31,7 +71,7 @@ let screen = window.matchMedia("(max-width:768px)");
 
 
 
-    
+
 
 
 
