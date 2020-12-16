@@ -1,4 +1,20 @@
+let listThumb = document.getElementsByClassName('list-thumbs');
+let lis = listThumb[0].getElementsByTagName('li');
+let image = listThumb[0].getElementsByTagName('img');
+let arrayimage = ['images/product/anker-power-port-wireless-10w_grande.webp','images/product/anker-power-port-wireless-10w-3_grande.jpg',
+'images/product/anker-power-port-wireless-10w-1_grande.jpg','images/product/anker-power-port-wireless-10w-2_grande.jpg'];
 
+let imgFeatured = document.getElementById('img-featured');
+let imgBox = imgFeatured.getElementsByTagName('img');
+
+
+    for (let i = 0; i < image.length; i++) {
+        image[i].onclick = function(){
+            imgBox[0].src = arrayimage[i];
+            listThumb[0].getElementsByClassName('active')[0].classList.remove('active');
+            lis[i].className += ' active';
+        }  
+    }
 
 
 
