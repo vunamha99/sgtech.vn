@@ -287,7 +287,7 @@
                                                 <button type="button" class="btn-add-cart">
                                                     <span>Thêm vào giỏ</span>
                                                     <small>Xem hàng không thích có thể trả lại</small>
-                                                </button>  
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -301,7 +301,8 @@
                                                         </div>
                                                         <div class="detail">
                                                             <h5>GIAO HÀNG</h5>
-                                                            <div>Giao hàng nội thành SG nhanh với chi phí thấp nhất.</div>
+                                                            <div>Giao hàng nội thành SG nhanh với chi phí thấp nhất.
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -324,7 +325,8 @@
                                                         </div>
                                                         <div class="detail">
                                                             <h5>CHÍNH SÁCH BẢO HÀNH</h5>
-                                                            <div>Smartphone BH 6 tháng. Linh kiện điện tử BH 3 tháng</div>
+                                                            <div>Smartphone BH 6 tháng. Linh kiện điện tử BH 3 tháng
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -338,10 +340,10 @@
                                                             <div>
                                                                 <ul>
                                                                     <li>Hotline: 0909776688</li>
-                                                                    <li>Thứ 2 - 7: 09:00 - 21:00</li> 
+                                                                    <li>Thứ 2 - 7: 09:00 - 21:00</li>
                                                                     <li>Chủ nhật: 09:00 - 21:00</li>
                                                                 </ul>
-                                                             </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -356,32 +358,119 @@
             </div>
             <div class="pdBlockDetail pd-tab-info">
                 <div class="list-tabs">
-                    <button type="button" class="btn-tab active">CHI TIẾT SẢN PHẨM</button>
-                    <button type="button" class="btn-tab">BÌNH LUẬN</button>
-                    <button type="button" class="btn-tab">SO SÁNH VỚI</button>
+                    <button type="button" class="btn-tab" onclick="showtab(event,'chi-tiet-san-pham')" id="defaultOpen">CHI TIẾT SẢN PHẨM</button>
+                    <button type="button" class="btn-tab" onclick="showtab(event,'binh-luan')">BÌNH LUẬN</button>
+                    <button type="button" class="btn-tab" onclick="showtab(event,'so-sanh')">SO SÁNH VỚI</button>
                 </div>
 
                 <div id="chi-tiet-san-pham" class="tab-content">
-                    A
+                    <div class="wrap-chi-tiet">
+                        <h5>Thiết kế cao cấp</h5>
+                        <p><span>Đế Sạc Không Dây Anker PowerPort Chuẩn Qi 10W (Không Kèm Adapter) A2513011</span> có
+                            đèn LED
+                            thông báo cho biết tình trạng sạc của thiết bị và bộ sạc. Thông báo sẽ không tắt khi sạc
+                            hoàn tất.
+                            Bộ sạc không trơn trượt giữ thiết bị an toàn. Kiểu dáng đẹp, nhỏ gọn tiết kiệm diện tích.
+                        </p>
+                        <img src="images/product/ppw10w-1_grande.webp" alt="empty">
+
+                        <h5>Tính năng an toàn cao cấp</h5>
+                        <p>Công nghệ MultiProtect độc quyền cung cấp chức năng điều khiển nhiệt độ,
+                            bảo vệ chống sốc, chống ngắn mạch và nhiều hơn nữa.</p>
+                        <img src="images/product/ppw10w-2_grande.webp" alt="empty">
+
+                        <h5>Sạc nhanh hơn</h5>
+                        <p>Chế độ sạc nhanh cung cấp 10W để sạc nhanh đến thiết bị có khả năng sạc không dây.</p>
+                        <img src="images/product/ppw10w-3_grande.webp" alt="empty">
+
+                        <h5>Sạc dễ dàng</h5>
+                        <p>Công nghệ sạc không dây tiên tiến đơn giản hóa việc sạc chỉ bằng cách đặt điện
+                            thoại của bạn trên Anker PowerPort Chuẩn Qi 10W.</p>
+                        <img src="images/product/ppw10w-4_grande.webp" alt="empty">
+                    </div>
                 </div>
-                <!-- <div id="binh-luan" class="tab-content">
-                    B
+                <div id="binh-luan" class="tab-content">
+                    Binh luan
                 </div>
                 <div id="so-sanh" class="tab-content">
-                   C 
-                </div> -->
+                    <div class="wrap-so-sanh">
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/a987e373a744cc7fa3488b1be2e5e6fa_d176a926e4c14855b96704ee88b86edb_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/c3f4ed8bc2e87967b0d4697_master_0fee33050dd6429e99134c7553c54702_master_b02856bdc16444a5b46c62339395aa21_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/c3f4ed8bc2e87967b0d4697_master_0fee33050dd6429e99134c7553c54702_master_b02856bdc16444a5b46c62339395aa21_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/upload_0b6d9477b43148308ad807a8bad75567_master-e1565231177807_9330c202a61747879f87898bcb8702c3_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/cap-anker-power-lighting_ii-den_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <div class="label-top">
+                                <a href="javascript:void(0)">S</a>
+                            </div>
+                            <div class="image-zoom">
+                                <img src="images/product/c3f4ed8bc2e87967b0d4697_master_0fee33050dd6429e99134c7553c54702_master_b02856bdc16444a5b46c62339395aa21_medium.webp"
+                                    alt="empty">
+                            </div>
+                            <h3 class="pd-Loopname">
+                                <a href="javascript:void(0)">Name product</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
     </div>
-
-
-
-
-
-
 
 
 
@@ -702,6 +791,7 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
 </body>
 
 </html>
