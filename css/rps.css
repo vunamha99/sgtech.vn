@@ -1,0 +1,182 @@
+@media screen and (max-width:990px) {
+    /*============ RESPONSIVE INDEXCLEAN.HTML ============*/
+    
+    /*============ RESPONSIVE HEADER ============*/
+    .wp-header .logo, .wp-header .search, .wp-header .navtop {
+        max-width: 100%;
+        flex: none;
+    }
+    .wp-header .navtop {
+        margin-top: 15px;
+    }
+    .wp-header .navtop .navright {
+        text-align: center;
+    }
+    .navtop .navright .li_child .subnav {
+        text-align: left;
+    }
+    /*============ RESPONSIVE HOMESLIDE ============*/
+    #inSlide {
+        z-index: -1;
+    }
+    .wp-homeslide #inSlide {
+        max-width: 100%;
+        flex: none;
+    }
+    .wp-homeslide #inBannerRight {
+        display: none;
+    }
+    .wp-topproduct .blockTitle .viewTop{
+        right: 8px;
+    }
+    /*============ RESPONSIVE CUSTOM NAV-COMMON ============*/
+    /*============ RESPONSIVE HomeProductBlock-COMMON ============*/
+    /* BlockTitle */
+    .blockTitle .viewTop {
+        right: 0;
+        z-index: 5;
+    }
+    .viewTop .nav-top {
+        display: none;
+    }
+    .blockTitle .viewTop .hidden-nav {
+        display: block;
+    }
+    /* BlockContent */
+    .blockContent .blockColumn-left {
+        max-width: 100%;
+        flex: none;
+    }
+    .product .ListAction {
+        display: none;
+    }
+    .blockContent .blockColumn-right {
+        display: none;
+    }
+    /*============ RESPONSIVE FOOTER ============*/
+    .footerTop .colFooter {
+        max-width: 100%;
+        flex: none;
+    }
+    .footerTop .colFooter.left {
+        margin-bottom: 20px;
+    }
+    .footerBottom .logo-ft-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    /*============ RESPONSIVE INDEXCLEAN.HTML ============*/
+
+    .container{
+        max-width: 100%;
+    }
+    .headerPage {
+        padding-bottom: 10px;
+    }
+    .overlay-menu {
+        z-index: 11;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .wp-header .hidden-icon-top {
+        display: block;
+    }
+    .wp-header .navtop {
+        display: none;
+    }
+
+    .blockTitle .viewTop>a{
+        display: none;
+    }
+    .blockContent .viewTop{
+        display: block;
+    }
+
+
+    .side-bar {
+        display: block;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    /* STYLE HEADER */
+    .side-bar .loginMB {
+        background: #1BA8FF url(../images/mobile_bg.svg) top left no-repeat;
+        background-size: contain;
+        padding: 130px 10px 10px 10px;
+    }
+    .wp-login .icon, .user {
+        float: left;
+    }
+    .icon {
+        margin-right: 10px;
+    }
+    .user>a {
+        color: white;
+        font-size: 14px;
+    }
+    .user>a:hover {
+        color: white;
+    }
+    .user>h3 {
+        color: white;
+        font-size: 18px;
+        margin: 0;
+    }
+    /* STYLE NAV */
+    .wp-nav .navright li {
+        width: 50%;
+        margin: 0 -5px;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid rgb(241, 241, 241);
+    }
+    .navright li:first-child, li:nth-child(3), li:nth-child(5) {
+        border-right: 1px solid rgb(241, 241, 241);
+    }
+    .side-bar .wp-nav .btn-close {
+        visibility: visible;
+    }
+
+
+
+    .subwrap{
+        display: none;
+    }
+
+
+
+
+
+    /* width */
+    .side-bar::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    .side-bar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .side-bar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5px;
+    }
+    /* Handle on hover */
+    .side-bar::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+
+
+    .footerTop .colFooter.right .fTLinks{
+        margin-bottom: 20px;
+    }
+}
+
